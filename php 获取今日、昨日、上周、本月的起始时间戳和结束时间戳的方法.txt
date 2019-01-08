@@ -1,5 +1,5 @@
-php 获取今日、昨日、上周、本月的起始时间戳和结束时间戳的方法
 php 获取今日、昨日、上周、本月的起始时间戳和结束时间戳的方法，主要使用到了 php 的时间函数 mktime。下面首先还是直奔主题以示例说明如何使用 mktime 获取今日、昨日、上周、本月的起始时间戳和结束时间戳，然后在介绍一下 mktime 函数作用和用法。
+
 
 01	//php获取今日开始时间戳和结束时间戳
 02	$beginToday=mktime(0,0,0,date('m'),date('d'),date('Y'));
@@ -14,6 +14,8 @@ php 获取今日、昨日、上周、本月的起始时间戳和结束时间戳�
 11	$beginThismonth=mktime(0,0,0,date('m'),1,date('Y'));
 12	$endThismonth=mktime(23,59,59,date('m'),date('t'),date('Y'));
 PHP mktime() 函数用于返回一个日期的 Unix 时间戳。
+
+
 
 语法
 
@@ -50,9 +52,7 @@ Jan-05-2002
 
  
 
-二、
-
-​    
+二、​    
 
 //获取今天00:00
 $todaystart = strtotime(date('Y-m-d'.'00:00:00',time()));
